@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f7f4;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #d8e2dc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    background: #2d6a4f;
+    color: white;
+}
+
+.content {
+    display: none; /* Sembunyikan semua materi dulu */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content.active {
+    display: block; /* Tampilkan yang aktif */
+}
+
+.card {
+    border-left: 5px solid #2d6a4f;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.contoh {
+    font-size: 1.2rem;
+    color: #1b4332;
+    font-weight: bold;
+    margin-top: 10px;
+}
