@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tajwid Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📖 Pintar Tajwid</h1>
+        <p>Belajar hukum bacaan Al-Qur'an dengan mudah</p>
+    </header>
+
+    <div class="container">
+        <!-- Navigasi Menu -->
+        <nav class="tabs">
+            <button class="tab-btn active" onclick="bukaMateri(event, 'nun-mati')">Nun Mati</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'ikhfa-haqiqi')">Ikhfa</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'idgham')">Idgham</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'iqlab')">Iqlab</button>
+            <button class="tab-btn" onclick="bukaMateri(event, 'qalqalah')">Qalqalah</button>
+             <button class="tab-btn" onclick="bukaMateri(event, 'ghunnah')">Ghunnah</button>
+
+        </nav>
+
+        <!-- Konten: Nun Mati -->
+        <div id="nun-mati" class="content active">
+            <h2>Hukum Nun Mati & Tanwin</h2>
+            <div class="card">
+                <h3>Idzhar Halqi</h3>
+                <p>Membaca jelas suara Nun mati jika bertemu: ا ح خ ع غ هـ</p>
+                <div class="contoh">Contoh: مَنْ اٰمَنَ (Man Aamana)</div>
+            </div>
+        </div>
+
+        <!-- Konten: Ikhfa -->
+        <div id="ikhfa-haqiqi" class="content active">
+            <h2>Ikhfa Haqiqi</h2>
+            <p>Menyamarkan suara Nun Mati/Tanwin jika bertemu 15 huruf:</p>
+            <div class="huruf-container">
+                <span class="huruf">ت</span> <span class="huruf">ث</span> <span class="huruf">ج</span> 
+                <span class="huruf">د</span> <span class="huruf">ذ</span> <span class="huruf">ز</span> 
+                <span class="huruf">س</span> <span class="huruf">ش</span> <span class="huruf">ص</span> 
+                <span class="huruf">ض</span> <span class="huruf">ط</span> <span class="huruf">ظ</span> 
+                <span class="huruf">ف</span> <span class="huruf">ق</span> <span class="huruf">ك</span>
+            </div>
+            <div class="card">
+                <div class="contoh">Contoh: مِنْ تَحْتِهَا (Min tahtiha)</div>
+            </div>
+        </div>
+
+        <!-- Konten: Idgham -->
+        <div id="idgham" class="content active">
+            <h2>Hukum Idgham</h2>
+            <div class="card">
+                <h3>Idgham Bighunnah (ي ن م و)</h3>
+                <div class="contoh">Contoh: مَنْ يَقُوْلُ (May yaquulu)</div>
+            </div>
+            <div class="card" style="border-left-color: #bc4749;">
+                <h3>Idgham Bilaghunnah (ل ر)</h3>
+                <div class="contoh">Contoh: مِنْ رَبِّهِمْ (Mir rabbihim)</div>
+            </div>
+        </div>
+
+        <!-- Konten: Iqlab -->
+        <div id="iqlab" class="content active">
+            <h2>Hukum Iqlab</h2>
+            <p>Mengganti suara Nun mati menjadi Mim jika bertemu huruf:</p>
+            <div class="huruf-container">
+                <span class="huruf" style="color:#fca311;">ب</span>
+            </div>
+            <div class="card">
+                <div class="contoh">Contoh: مِنْ بَعْدِ (Mim Ba'di)</div>
+            </div>
+        </div>
+
+        <!-- Konten: Qalqalah -->
+        <div id="qalqalah" class="content active">
+            <h2>Hukum Qalqalah</h2>
+            <p>Memantulkan suara jika bertemu huruf: <strong>ق ط ب ج د</strong></p>
+            <div class="card">
+                <div class="contoh">Contoh: قُلْ هُوَ اللّٰهُ اَحَدٌ (Ahad - dipantulkan)</div>
+            </div>
+    </div>
+
+            </div><!-- Konten Baru: Ghunnah -->
+<div id="ghunnah" class="content active">
+    <h2>Ghunnah Musyaddadah</h2>
+    <p>Terjadi apabila ada huruf Nun atau Mim yang memiliki tanda Tasydid ( ّ  ).</p>
+        <div class="huruf-container">
+            <span class="huruf">نّ</span> <span class="huruf">مّ</span>
+        </div>
+        <p>Cara membacanya harus berdengung selama 2-3 harakat.</p>
+        <div class="contoh">Contoh: اِنَّ (Inna) - ثُمَّ (Thumma)</div>
+    </div>
+</div>
+
+       
+
+
+    <script src="script.js"></script>
+</body>
+</html>
